@@ -48,7 +48,13 @@
 
 </div>
 
-
-
+<script>
+  // Questo non mette il focus sulla barra degli indirizzi (impossibile),
+  // ma permette di iniziare a scrivere subito se aggiungi una barra di ricerca nella pagina.
+  window.onload = function() {
+    const searchInput = document.getElementById('mio-input-ricerca');
+    if (searchInput) searchInput.focus();
+  };
+</script>
 </body>
 </html>
